@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./fonts/all.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./image/logo.png">
+    <title>Главная</title>
+</head>
+<body>
+    <header class = "header">
+        <section id = "HEADER"></section>
+        <a href="#HEADER" id = "HEADER_link" class = "BTN_NV"><i class = "fas fa-arrow-up"></i></a>
+
+        <div class="container">
+            <nav class = "nav__bar">
+                <div class="logo animate__animated animate__flash">
+                    <a href="">
+                        <img src="./image/logo.png" alt="">
+                    </a>
+                </div>
+
+                <input type="checkbox" id = "MenuBtn1" style="display: none;">
+                <label for="MenuBtn1" class = "MenuBtn_lable menu__link"><i class = "fas fa-server"></i></label>
+
+                <div class="nav__bar_content H_GEOMETRY">
+                    <div class = "nav__bar_div">
+                        <menu class = "menu W_MENU">
+                            <li><a href="./pages/Service.html" class="menu__link">Сервисный центр</a></li>
+                            <li><a href="./pages/Payment.html" class="menu__link">Доставка и оплата</a></li>
+                            <li><a href="./pages/Reviews.html" class="menu__link">Отзывы </a></li>
+                            <li><a href="./pages/User.html" class="menu__link">Личный кабинет</a></li>
+                            <li><a href="./pages/About.html" class="menu__link">О компании </a></li>
+                            <li><a href="./pages/Contacts.html" class="menu__link">Контакты </a></li>
+                            <li><label for="MenuBtn1" class = "MenuBtn_lable menu__link"><i class = "fas fa-server"></i></label></li>
+                        </menu>
+                    </div>
+    
+                    <div class = "nav__bar_div">
+                        <menu class = "menu W_MENU">
+                            <li style="display: flex; align-items: center; gap: 10px;"><input type="search" placeholder="Поиск" id = "InpSearch" class = "INPUT"> <label class = "menu__link" for="InpSearch"><i class = "fas fa-search"></i></label></li>
+                            <li><p class = "TEXT">
+                                СВС - надежный поставщик компьютерной 
+                                <span>техники рядом с вами. 28 лет в Жуковском</span>
+                            </p></li>
+                            <li><a href="tel:+1234567890" class = "menu__link"><i class = "fas fa-phone"></i> +7 495 723-09-69</a></li>
+                            <li></li>
+                        </menu>
+
+                        <ul id = "SearchMenu" class = "HIDE">
+                            <li><a href="" class = "menu__link">Главная</a></li>
+                            <li><a href="./pages/Service.html" class="menu__link">Сервисный центр</a></li>
+                            <li><a href="./pages/Payment.html" class="menu__link">Доставка и оплата</a></li>
+                            <li><a href="./pages/Reviews.html" class="menu__link">Отзывы </a></li>
+                            <li><a href="./pages/User.html" class="menu__link">Личный кабинет</a></li>
+                            <li><a href="./pages/About" class="menu__link">О компании </a></li>
+                            <li><a href="./pages/Contacts" class="menu__link">Контакты </a></li>
+                            <li><a href="./pages/ComplexDelivery.html" class="menu__link">Комплексная поставка</a></li>
+                            <li><a href="./pages/Commissioning.html" class="menu__link">Пуско-наладка IT-оборудования</a></li>
+                            <li><a href="./pages/AuditAndOptimization.html" class="menu__link">Аудит и оптимизация парка печати</a></li>
+                            <li><a href="./pages/Tenders.html" class="menu__link">Тендеры</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+        <nav class = "nav__bar_2 BG">
+            <div class="container">
+
+                <div class="dropdown">
+                    <button class="dropbtn">Меню</button>
+                    <div class="dropdown-content">
+                        <a href="./pages/ComplexDelivery.html" class="menu__link">Комплексная поставка</a>
+                        <a href="./pages/Commissioning.html" class="menu__link">Пуско-наладка IT-оборудования</a>
+                        <a href="./pages/AuditAndOptimization.html" class="menu__link">Аудит и оптимизация парка печати</a>
+                        <a href="./pages/Tenders.html" class="menu__link">Тендеры</a>
+                    </div>
+                </div>
+
+                
+
+                <menu class = "menu W_MENU">
+                    <li><a href="./pages/ComplexDelivery.html" class="menu__link">Комплексная поставка</a></li>
+                    <li><a href="./pages/Commissioning.html" class="menu__link">Пуско-наладка IT-оборудования</a></li>
+                    <li><a href="./pages/AuditAndOptimization.html" class="menu__link">Аудит и оптимизация парка печати</a></li>
+                    <li><a href="./pages/Tenders.html" class="menu__link">Тендеры</a></li>
+                </menu>
+
+                <button id = "ThemaBtn" class = "BTN"></button>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div id = "navigation" class="W_MENU">
+                <a href="" class = "menu__link">Главная</a>
+                <i class = "fas fa-arrow-right"></i>
+                <h3></h3>
+            </div>
+        </div>
+    </header>
+
+    <main class = "main">
+        <div class="container">
+            <section class="Title__Info W_GEOMETRY">
+                <div class="Title__Info_left">
+                    <div class = "Category">
+                        <h3>Каталог</h3>
+                        <div class="Category_items">
+                            <a href="./pages/ComputerSupplies.html" class = "Category_items_link BTN"><i class="fas fa-laptop"></i> Компьютеры и комплектующие</a>
+                            <a href="./pages/ComputerSupplies.html" class = "Category_items_link BTN"><i class="fas fa-mouse"></i> Периферия и аксессуары</a>
+                            <a href="./pages/ComputerSupplies.html" class = "Category_items_link BTN"><i class="fas fa-mobile"></i> Смартфоны, планшеты и аксессуары</a>
+                            <a href="./pages/ComputerSupplies.html" class = "Category_items_link BTN"><i class="fas fa-tools"></i> Расходные материалы</a>
+                            <a href="./pages/ComputerSupplies.html" class = "Category_items_link BTN"><i class="fas fa-laptop-house"></i> Офисная техника</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Title__Info_right">
+                    <h2 class = "TEXT">
+                        Компьютерный магазин <b>СВС в Жуковском</b>
+                        <span>Поставки компьютерной техники, сервис-центр</span>
+                        <span>и услуги для компаний по IT-интеграции</span>
+                    </h2>
+
+                    <div class="Title__Info_right_text">
+                        
+                        <div class = "Title__Info_right_text_div IMG_BG">
+                            <button class = "BTN_NV"><i class = "fas fa-arrow-left"></i></button>
+                            
+                            <div>
+                                <p class = "TEXT">
+                                    Поставки компьютерной 
+                                    <span>техники для офисов</span>
+                                    <span>под “ключ”</span>
+                                </p>
+                                <a href="#!" class = "BTN">
+                                    СМОТРЕТЬ ПРЕДЛОЖЕНИЕ
+                                </a>
+                            </div>
+
+                            <button class = "BTN_NV"><i class = "fas fa-arrow-right"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="MoreAbout W_GEOMETRY animate__animated animate__backInRight">
+                <div class="MoreAbout_item">
+                    <img src="./image/index/main/MoreAbout/img.png" alt="">
+                    <h3>Надежный поставщик</h3>
+                    <p class = "TEXT">
+                        С 1993 года на рынке
+                        <span>Жуковского. 28 лет</span>
+                        <span>рядом с вами.</span>
+                    </p>
+                </div>
+
+                <div class="MoreAbout_item">
+                    <img src="./image/index/main/MoreAbout/img2.png" alt="">
+                    <h3>Полный комплекс</h3>
+                    <p class = "TEXT">
+                        Поставки, ремонт
+                        <span> и обслуживание в сервис-</span>
+                        <span>центре СВС - все в одном месте</span>
+                    </p>
+                </div>
+
+                <div class="MoreAbout_item">
+                    <img src="./image/index/main/MoreAbout/img3.png" alt="">
+                    <h3>Заказ под ключ</h3>
+                    <p class = "TEXT">
+                        Подберем технику “под ключ”
+                        <span>по потребностям</span>
+                        <span>и бюджету.</span>
+                    </p>
+                </div>
+
+                <div class="MoreAbout_item">
+                    <img src="./image/index/main/MoreAbout/img4.png" alt="">
+                    <h3>Качественный сервис</h3>
+                    <p class = "TEXT">
+                        Высококлассные технические
+                        <span>специалисты, которые</span>
+                        <span>не стоят над душой, но посоветуют</span>
+                        <span> то, что надо.</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class = "About W_GEOMETRY">
+                <div class="About_left animate__animated animate__backInLeft">
+                    <img src="./image/index/main/About/img.png" alt="">
+                    <div class="About_left_item">
+                        <h3 class = "TEXT">
+                            Комплексные поставки
+                            <span>компьютерного оборудования</span> 
+                            <span>для вашего офиса</span>
+                            в Жуковском
+                        </h3>
+                        <p class = "TEXT">
+                            Специалист
+                            <span>бесплатно подберет решение под</span>
+                            <span>ваши требования.</span>
+                        </p>
+                        <a href="#!" class = "BTN">подобрать технику</a>
+                    </div>
+                </div>
+                <div class="About_right animate__animated animate__backInRight">
+                    <img src="./image/index/main/About/img2.png" alt="">
+                    
+                    <div class="About_left_item">
+                        <h3 class = "TEXT">
+                            Оборудуем офис 
+                            <span>“под ключ”</span> 
+                        </h3>
+                        <p class = "TEXT">
+                            Компьютерной техникой
+                            <span>периферией, мебелью</span>
+                            <span>канцтоварами, а также вкусным</span>
+                            <span>кофе</span>
+                        </p>
+                        <a href="#!" class = "BTN">СОБРАТЬ ОФИС</a>
+                    </div>
+                </div>  
+            </section>
+        </div>
+
+        <section class = "Gsosh BG">
+            <div class="container">
+                <div class="Gsosh_content">
+                    <h2 class = "TITLE_TEXT">
+                        Работаем с государственными заказчиками по
+                        <span>требовательным ТЗ</span>
+                    </h2>
+                    <a href="#!" class = "BTN">УЗНАТЬ О РАБОТЕ С ТЕНДЕРАМИ <i class = "fas fa-arrow-right"></i></a>
+                    <div class="Gsosh_content_items">
+                        <div class="Gsosh_content_item">
+                            <img src="./image/index/main/Gsosh/img.png" alt="">
+                            <p class = "TEXT">
+                                «Авиационный техникум 
+                                <span>имени Казакова»</span>
+                            </p>
+                        </div>
+
+                        <div class="Gsosh_content_item">
+                            <img src="./image/index/main/Gsosh/img2.png" alt="">
+                            <p class = "TEXT">МФТИ</p>
+                        </div>
+
+                        <div class="Gsosh_content_item">
+                            <img src="./image/index/main/Gsosh/img3.png" alt="">
+                            <p class = "TEXT">
+                                МБУС Раменского городского 
+                                <span>округа ФК «Сатурн».</span>
+                            </p>
+                        </div>
+
+                        <div class="Gsosh_content_item">
+                            <img src="./image/index/main/Gsosh/img4.png" alt="">
+                            <p class = "TEXT">
+                                ФГУП «Цаги»
+                            </p>
+                        </div>
+
+                        <div class="Gsosh_content_item">
+                            <img src="./image/index/main/Gsosh/img5.png" alt="">
+                            <p class = "TEXT">
+                                <span>АО «ЛИИ</span>
+                                им. Громова»
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class = "All_Product">
+                <div class="All_Product_item">
+
+                    <a class = "BTN" href="#!">Топ категорий СВС</a>
+
+                </div>
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img.png" alt="">
+                    <a href="#!" class = "BTN">Процессоры</a>
+                </div>
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img2.png" alt="">
+                    <a href="#!" class = "BTN">Ноутбуки</a>
+                </div>
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img3.png" alt="">
+                    <a href="#!" class = "BTN">Системные блоки</a>
+                </div>
+
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img4.png" alt="">
+                    <a href="#!" class = "BTN">Мониторы</a>
+                </div>
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img5.png" alt="">
+                    <a href="#!" class = "BTN">Принтеры</a>
+                </div>
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img6.png" alt="">
+                    <a href="#!" class = "BTN">МФУ</a>
+                </div>
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img7.png" alt="">
+                    <a href="#!" class = "BTN">Видеокарты</a>
+                </div>
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img8.png" alt="">
+                    <a href="#!" class = "BTN">Картриджи</a>
+                </div>
+
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img9.png" alt="">
+                    <a href="#!" class = "BTN">Микрофоны</a>
+                </div>
+
+                <div class="All_Product_item">
+                    <img src="./image/index/main/All_Product/img10.png" alt="">
+                    <em class = "TEXT">Офис “под ключ”</em>
+                    <a href="#!" class = "BTN">Компьютерная техника</a>
+                </div>
+
+                <div class="All_Product_item">
+                    <a href="#!" class = "BTN">ПОСМОТРЕТЬ ВСЕ КАТЕГОРИИ</a>
+                </div>
+            </section>
+
+            <section class = "About W_GEOMETRY">
+                <div class="About_left animate__animated animate__backInLeft">
+                    <img src="./image/index/main/About/img3.png" alt="">
+                    <div class="About_left_item">
+                        <h3 class = "TITLE_TEXT">
+                            Решаем cложные
+                            <span>задачи интеграции</span>
+                            <span>компьютерной техники</span>
+                            в ваш бизнес 
+                        </h3>
+                        <p class = "TEXT">
+                            Предоставим
+                            бесплатный тест компьютерного
+                            <span>оборудования, чтобы все</span>
+                            работало как надо
+                        </p>
+                        <a href="#!" class = "BTN">внедрить оборудование</a>
+                    </div>
+                </div>
+                <div class="About_right animate__animated animate__backInRight">
+                    <img src="./image/index/main/About/img4.png" alt="">
+                    
+                    <div class="About_left_item">
+                        <h3 class = "TITLE_TEXT">
+                            Оборудуем офис 
+                            <span>“под ключ”</span> 
+                        </h3>
+                        <p class = "TEXT">
+                            Компьютерной техникой
+                            <span>периферией, мебелью</span>
+                            <span>канцтоварами, а также вкусным</span>
+                            <span>кофе</span>
+                        </p>
+                        <a href="#!" class = "BTN">УЗНАТЬ КАК</a>
+                    </div>
+                </div>  
+            </section>
+        </div>
+
+    </main>
+
+    <footer class = "footer">
+
+        <div class="container" >
+            <section class="footer_CENTER animate__animated animate__backInLeft">
+                <h3 class = "TEXT">
+                    Магазин компьютерной техники СВС 
+                    <span>рядом с вами, в Жуковском</span>
+                </h3>
+                <div class="footer_CENTER_div W_GEOMETRY">
+                    <div class="footer_CENTER_div_left">
+                        <ul class = "H_MENU">
+                            <li><p class = "TEXT"><i class="fas fa-map-marker-alt"></i> г. Жуковский, ул. Московская, д.1</p></li>
+                            <li><p class = "TEXT"><i class = "fas fa-phone"></i> +7 (495) 725-09-69</p></li>
+                            <li><p class = "TEXT"><i class="fas fa-envelope"></i>  Svs93@mail.ru</p></li>
+                            <li><p class = "TEXT"><i class="fas fa-clock"></i> Пн – Чт: с 9:00 до 19:00 Пт: с 9:00 до 17:00</p></li>
+                            <li><p class = "TEXT"><i class="fas fa-clock"></i> Сб - Вс: принимаем онлайн-заказы</p></li>
+                        </ul>
+                    </div>
+                    <div class="footer_CENTER_div_right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95925.51709077595!2d69.2453376!3d41.2942336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e3!4m0!4m0!5e0!3m2!1sru!2s!4v1698396693386!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class = "footer_END BG">
+            <div class="container">
+                <section class="footer_content">
+                        
+                        <div class="footer_content_item">
+                            
+                            <div class="logo H_GEOMETRY animate__animated animate__flash">
+                                <a href="">
+                                    <img src="../image/logo.png" alt="">
+                                </a>
+    
+                                <p class = "TEXT">
+                                    СВС - надежный поставщик компьютерной 
+                                    <span>техники рядом с вами</span>
+                                    <span>28 лет в Жуковском</span>
+                                </p>
+                            </div>
+    
+                            <ul class = "footer_content_item_menu H_MENU">
+                                <li><h2>Популярные категории</h2></li>
+                                <li><a href="./pages/ComputerSupplies.html" class="menu__link TEXT">Компьютерные поставки <span>и комплектующие</span></a></li>
+                                <li><a href="#!" class="menu__link">Принтеры и МФУ</a></li>
+                                <li><a href="#!" class="menu__link">Видеокарты</a></li>
+                                <li><a href="#!" class="menu__link">Картриджи</a></li>
+                                <li><a href="#!" class="menu__link">Акции</a></li>
+                            </ul>
+    
+                            <ul class = "footer_content_item_menu H_MENU">
+                                <li><h2>Услуги</h2></li>
+                                <li><a href="" class="menu__link TEXT">Поставки картриджей <span>в офис</span></a></li>
+                                <li><a href="" class="menu__link TEXT">Пуско-наладка <span>оборудования</span></a></li>
+                                <li><a href="" class="menu__link TEXT">Аудит парка <span>печатной техники</span></a></li>
+                            </ul>
+    
+                            <ul class = "footer_content_item_menu H_MENU">
+                                <li><h2>Информация</h2></li>
+                                <li><a href="" class="menu__link">Доставка и оплата</a></li>
+                                <li><a href="" class="menu__link">Гарантии</a></li>
+                                <li><a href="" class="menu__link">Отзывы</a></li>
+                                <li><a href="" class="menu__link">О компании СВС</a></li>
+                                <li><a href="" class="menu__link">Политикаконфиденциальности</a></li>
+                            </ul>
+    
+                            <ul class = "footer_content_item_menu H_MENU">
+                                <li><a href="https://www.instagram.com/" class="menu__link"><i class = "fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/" class="menu__link"><i class = "fab fa-facebook"></i></a></li>
+                                <li><a href="https://www.vk.com/" class="menu__link"><i class = "fab fa-vk"></i></a></li>
+                                <li><a href="./User.html" class="menu__link"><i class = "fas fa-user"></i></a></li>
+                                <li><a href="https://web.telegram.org/" class="menu__link"><i class = "fab fa-telegram"></i></a></li>
+                            </ul>
+                        </div>
+    
+                </section>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <div class="loader">
+        <img src="../image/loading.gif" alt="">
+    </div>
+
+    <script src="../js/layout.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
