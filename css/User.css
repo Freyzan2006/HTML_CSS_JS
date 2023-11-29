@@ -1,0 +1,70 @@
+.main,
+.main>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+b {
+    color: var(--ActiveColor);
+}
+
+.User_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.User_info_form {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: solid 1px var(--ActiveColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    gap: 30px;
+}
+
+.User_info_form img {
+    max-width: 200px;
+    width: 100%;
+    transition: 0.5s all ease;
+}
+
+.User_info_form img:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+.User_info_form input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+.User_info_form>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+#InfoForUser {
+    max-width: 200px;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    background-color: var(--BG);
+    border-radius: 15px;
+    border: solid 1px red;
+    transition: 0.5s all ease;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

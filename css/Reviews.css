@@ -1,0 +1,50 @@
+.main,
+.main>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+b {
+    color: var(--ActiveColor);
+}
+
+.All_Reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Review {
+    background-color: var(--BG);
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.404);
+    border: solid 1px var(--ActiveColor);
+}
+
+.Review img {
+    max-width: 100px;
+    width: 100%;
+    border: solid 3px var(--ActiveColor);
+}
+
+.Review h3,
+.Review h2 {
+    color: var(--ActiveColor);
+    font-weight: 900;
+}
+
+.Review p,
+.Review span {
+    color: var(--ColorText);
+    font-weight: 600;
+}

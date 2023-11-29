@@ -1,0 +1,35 @@
+.main,
+.main>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+b {
+    color: var(--ActiveColor);
+}
+
+.Info_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--BGHTML);
+    border-radius: 10px;
+    border: solid 1px var(--ActiveColor);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.274);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.Info_item>div {
+    max-width: 100px;
+    width: 100%;
+    
+}
+
+.Info_item img {
+    transition: 0.5s all ease;
+}
+

@@ -1,0 +1,246 @@
+.main,
+.main>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+b {
+    color: var(--ActiveColor);
+}
+
+
+
+.Title__Info {
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+@media (max-width: 930px) {
+    .Title__Info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+.Title__Info_left {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    background-color: var(--BG);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.26);
+}
+
+.Category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+} 
+
+.Category>h3 {
+    width: 100%;
+    color: var(--ActiveColor);
+    font-size: 30px;
+    background-color: var(--BGHTML);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.Category_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Category_menu_item {
+    overflow: hidden;
+}
+
+.Category_menu_item_content {
+    transform: translateY(-200%);
+}
+
+.Category_items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Category_items_link {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.Title__Info_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.Title__Info_right_item {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    text-align: end;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.178)), url(../image/Tenders/Titlt_info/img.png);
+    min-height: 225px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.About_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.About_content_item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.Recomind_CVC_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.Recomind_CVC_content_item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Recomind_CVC_content_item_div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--BG);
+    border: solid 1px var(--ActiveColor);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.Gsosh_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.Gsosh_content a {
+    max-width: 300px;
+    width: 100%;
+}
+
+.Gsosh_content_items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Gsosh_content_item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.We_know {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.We_know_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 30px;
+}
+
+.We_know_item {
+    width: 500px;
+
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px var(--ActiveColor);
+}
+
+@media (max-width: 1100px) {
+    .We_know_items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .We_know_item {
+        width: 300px;
+    }
+}
+
+.We_know_item:nth-child(1) {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.178)) ,url(../image/Tenders/We_know/img.png);
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.We_know_item:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.178)), url(../image/Tenders/We_know/img2.png);
+    justify-content: flex-end;
+    align-items: flex-start
+}
+
+.We_know_item:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.178)), url(../image/Tenders/We_know/img3.png);
+    justify-content: flex-end;
+    align-items: flex-start
+}
+
+.We_know_item:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.178)), url(../image/Tenders/We_know/img4.png);
+}

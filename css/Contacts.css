@@ -1,0 +1,27 @@
+.main,
+.main>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+b {
+    color: var(--ActiveColor);
+}
+
+.Contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--BG);
+    border-radius: 50px 50%;
+    border: solid 1px var(--ActiveColor);
+    padding: 15px 0;
+}
+
+.Contacts a {
+    font-size: 40px;
+}

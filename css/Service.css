@@ -1,0 +1,239 @@
+.main,
+.main>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+b {
+    color: var(--ActiveColor);
+}
+
+.Title__Info {
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.Title__Info_left {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    background-color: var(--BG);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.26);
+}
+
+.Category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+} 
+
+.Category>h3 {
+    width: 100%;
+    color: var(--ActiveColor);
+    font-size: 30px;
+    background-color: var(--BGHTML);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.Category_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Category_menu_item {
+    overflow: hidden;
+}
+
+.Category_menu_item_content {
+    transform: translateY(-200%);
+}
+
+.Category_items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Category_items_link {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.Title__Info_right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Title__Info_right_text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.178)), url(../image/Service/Title_Info/img.png);
+    max-width: 800px;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.Title__Info_right_text p {
+    color: var(--ActiveColor);
+}
+
+
+
+.All_Product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (max-width: 1000px) {
+    .All_Product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .All_Product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.All_Product_item h3,
+.All_Product_item p {
+    text-align: center;
+}
+
+.All_Product_item {
+    max-width: 300px;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: var(--BGHTML);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.425);
+    transition: 0.5s all ease;
+}
+
+.All_Product_item:hover {
+    transform: scale(105%);
+}
+
+.All_Product_item>.BTN {
+    width: 100%;
+}
+
+.All_Product_item_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.All_Product_item_div img {
+    max-width: 100px;
+    width: 100%;
+}
+
+
+
+.When_Time_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;   
+    padding: 15px 0; 
+}
+
+.When_Time_content_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.When_Time_content img {
+    max-width: 500px;
+    width: 100%;
+}
+
+
+
+.MoreAbout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--BG);
+    border-radius: 0 200px;
+    padding: 15px 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.178);
+    border: solid 1px var(--ActiveColor);
+}
+
+.MoreAbout_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 880px) {
+    .MoreAbout {
+        border-radius: 20px;
+    }
+}
+
+.AboutInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--BG);
+    padding: 15px 0;
+    border: solid 1px var(--ActiveColor);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.178);
+    border-radius: 5px;
+}
+
+.AboutInfo_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.AboutInfo_item img {
+    max-width: 150px;
+    width: 100%;
+}
